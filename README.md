@@ -56,6 +56,23 @@ L1 Loss (mean absolute error) of the predicted colors compared with the actual c
  Combined loss function will be:
  
  <img width="530" alt="image" src="https://user-images.githubusercontent.com/76114538/176715924-a0ed818d-5fa3-49c3-88d4-da3872e80faf.png">
+ 
+ 
+## Results
+
+#### After Epoch 1:
+Input Image (Black & White), Output Image (Colored), Real Image respectively: </br>
+
+![WhatsApp Image 2022-06-30 at 11 03 47 PM (1)](https://user-images.githubusercontent.com/76114538/176744203-4f55f1cc-c504-47cc-997e-17c8ac409e06.jpeg)
+
+![WhatsApp Image 2022-06-30 at 11 03 47 PM](https://user-images.githubusercontent.com/76114538/176744267-f84dacfc-0c74-4837-bcac-4a18c0317671.jpeg)
+
+#### After Epoch 23:
+Input Image (Black & White), Output Image (Colored), Real Image respectively: </br>
+
+![WhatsApp Image 2022-06-30 at 11 06 20 PM (1)](https://user-images.githubusercontent.com/76114538/176744626-921c3056-2a01-4a4d-9bfb-d59333cbb44a.jpeg)
+
+![WhatsApp Image 2022-06-30 at 11 06 20 PM](https://user-images.githubusercontent.com/76114538/176744817-ae298656-6302-45eb-89f3-fc06378a1c8f.jpeg)
 
 
 
