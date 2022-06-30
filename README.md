@@ -16,7 +16,7 @@ a - encode how much green-red each pixel is <br />
 b - encode how much yellow-blue each pixel is <br />
 
 
-## WorkFlow of our Conditional GAN:
+## Our Conditional GAN:
 
 ### Generator:
 Using Lab color space info, 
@@ -30,6 +30,27 @@ Using Lab color space info,
 2. Also discriminator(convolutional “PatchGAN” classifier) also takes real images (3-channel images again in Lab color space) that are not produced by the generator and decides whether this new 3-channel image is fake or real.
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/76114538/176712855-59f929fc-2638-4eaa-aa5e-1ffe202e8512.png">
+
+### Loss Function for our conditional GAN:
+
+<img width="538" alt="image" src="https://user-images.githubusercontent.com/76114538/176714218-defcf8b3-65ff-4c4d-9f2b-ae725ee36f73.png">
+
+Here,
+ G - generator model
+ D - discriminator </br>
+ x - grayscale image
+ z - input noise for the generator
+ y - the 2-channel output we want from the generator (it can also represent the 2 color channels of a real image)
+
+L1 Loss (mean absolute error) of the predicted colors compared with the actual colors:
+
+ <img width="531" alt="image" src="https://user-images.githubusercontent.com/76114538/176715496-050964fb-fdb8-4b04-859e-07f5d16d2d39.png">
+ 
+ L1 Loss is preferred over L2 loss because it reduces effect of producing gray-ish images.
+ Combined loss function will be:
+ 
+ <img width="530" alt="image" src="https://user-images.githubusercontent.com/76114538/176715924-a0ed818d-5fa3-49c3-88d4-da3872e80faf.png">
+
 
 
 
