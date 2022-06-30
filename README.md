@@ -23,13 +23,13 @@ Using Lab color space info,
 1. L channel(which is the grayscale image) is given to the generator model(U-net architecture)  
 2. It predict the other two channels (*a, *b) and after its prediction, we concatenate all the channels and we get our colorful image.
 
-<img width="509" alt="image" src="https://user-images.githubusercontent.com/76114538/176705408-a4d4fff3-c5f9-4d02-a493-6fdc0d776536.png">
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/76114538/176705408-a4d4fff3-c5f9-4d02-a493-6fdc0d776536.png">
 
 ### Discriminator:
 1. The discriminator(convolutional “PatchGAN” classifier), takes these two produced channels and concatenates them with the input grayscale image and decides whether this new 3-channel image is fake or real.
 2. Also discriminator(convolutional “PatchGAN” classifier) also takes real images (3-channel images again in Lab color space) that are not produced by the generator and decides whether this new 3-channel image is fake or real.
 
-<img width="509" alt="image" src="https://user-images.githubusercontent.com/76114538/176712855-59f929fc-2638-4eaa-aa5e-1ffe202e8512.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/76114538/176712855-59f929fc-2638-4eaa-aa5e-1ffe202e8512.png">
 
 
 
