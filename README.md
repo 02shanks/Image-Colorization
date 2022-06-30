@@ -29,6 +29,6 @@ Using Lab color space info,
 1. The discriminator(convolutional “PatchGAN” classifier), takes these two produced channels and concatenates them with the input grayscale image and decides whether this new 3-channel image is fake or real.
 2. Also discriminator(convolutional “PatchGAN” classifier) also takes real images (3-channel images again in Lab color space) that are not produced by the generator and decides whether this new 3-channel image is fake or real.
 
+[[https://www.researchgate.net/figure/The-PatchGAN-structure-in-the-discriminator-architecture_fig5_339832261|width=400px]]
 
-![image](https://user-images.githubusercontent.com/76114538/176707413-6dc48da8-11d2-44c2-8b84-9dc607db3191.png)
 
