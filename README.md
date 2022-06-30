@@ -15,7 +15,7 @@ L - encodes Lightness of each pixel <br />
 a - encode how much green-red each pixel is <br />
 b - encode how much yellow-blue each pixel is <br />
 
-<img width="300" alt="image" src="https://user-images.githubusercontent.com/76114538/176742760-7d9f84f6-13f7-4f44-b6c4-2d6b9e619f23.png"> <img width="300" alt="image" src="https://user-images.githubusercontent.com/76114538/176743023-32ed043c-7528-4043-b81f-67f2388fa190.png">
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/76114538/176742760-7d9f84f6-13f7-4f44-b6c4-2d6b9e619f23.png"> <img width="200" alt="image" src="https://user-images.githubusercontent.com/76114538/176743023-32ed043c-7528-4043-b81f-67f2388fa190.png">
 
 
 
