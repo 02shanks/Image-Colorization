@@ -35,19 +35,19 @@ Using Lab color space info,
 
 <img width="538" alt="image" src="https://user-images.githubusercontent.com/76114538/176714218-defcf8b3-65ff-4c4d-9f2b-ae725ee36f73.png">
 
-Here,
- G - generator model
+Here, </br>
+ G - generator model </br>
  D - discriminator </br>
- x - grayscale image
- z - input noise for the generator
- y - the 2-channel output we want from the generator (it can also represent the 2 color channels of a real image)
+ x - grayscale image </br>
+ z - input noise for the generator </br>
+ y - the 2-channel output we want from the generator (it can also represent the 2 color channels of a real image) </br>
 
 L1 Loss (mean absolute error) of the predicted colors compared with the actual colors:
 
  <img width="531" alt="image" src="https://user-images.githubusercontent.com/76114538/176715496-050964fb-fdb8-4b04-859e-07f5d16d2d39.png">
  
  L1 Loss is preferred over L2 loss because it reduces effect of producing gray-ish images.
- Combined loss function will be:
+ Combined loss function will be: </br>
  
  <img width="530" alt="image" src="https://user-images.githubusercontent.com/76114538/176715924-a0ed818d-5fa3-49c3-88d4-da3872e80faf.png">
 
