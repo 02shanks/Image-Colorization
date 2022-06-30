@@ -1,19 +1,19 @@
 # Image-Colorization
 
 
-## RGB and L*a*b*
+## RGB and Lab
 
 RGB and CIE Lab (or just "Lab") are two different color spaces, or ways of describing colors.RGB operates on three channels: red, green and blue. Lab is a conversion of the same information to a lightness component L*, and two color components - a* and b*.
 
 RGB color space:
-R - indicating how much Red the pixel is
-G - indicating how much Green the pixel is
-B - indicating how much Blue the pixel is
+R - indicating how much Red the pixel is <br />
+G - indicating how much Green the pixel is <br />
+B - indicating how much Blue the pixel is <br />
 
 Lab color space:
-L - encodes Lightness of each pixel
-a - encode how much green-red each pixel is
-b - encode how much yellow-blue each pixel is
+L - encodes Lightness of each pixel <br />
+a - encode how much green-red each pixel is <br />
+b - encode how much yellow-blue each pixel is <br />
 
 
 ## WorkFlow:
