@@ -33,6 +33,7 @@ Using Lab color space info,
 
 ### Loss Function for our conditional GAN:
 
+#### Discriminator Loss Function:
 <img width="538" alt="image" src="https://user-images.githubusercontent.com/76114538/176714218-defcf8b3-65ff-4c4d-9f2b-ae725ee36f73.png">
 
 Here, </br>
@@ -42,6 +43,7 @@ Here, </br>
  z - input noise for the generator </br>
  y - the 2-channel output we want from the generator (it can also represent the 2 color channels of a real image) </br>
 
+#### Generator Loss Function:
 L1 Loss (mean absolute error) of the predicted colors compared with the actual colors:
 
  <img width="531" alt="image" src="https://user-images.githubusercontent.com/76114538/176715496-050964fb-fdb8-4b04-859e-07f5d16d2d39.png">
