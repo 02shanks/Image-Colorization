@@ -16,7 +16,7 @@ a - encode how much green-red each pixel is <br />
 b - encode how much yellow-blue each pixel is <br />
 
 
-## WorkFlow:
+## WorkFlow of our Conditional GAN:
 
 ### Generator:
 Using Lab color space info, 
