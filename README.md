@@ -1,1 +1,31 @@
 # Image-Colorization
+
+
+## RGB and L*a*b*
+
+RGB and CIE L*a*b* (or just "Lab") are two different color spaces, or ways of describing colors.RGB operates on three channels: red, green and blue. Lab is a conversion of the same information to a lightness component L*, and two color components - a* and b*.
+
+RGB color space:
+R - indicating how much Red the pixel is
+G - indicating how much Green the pixel is
+B - indicating how much Blue the pixel is
+
+Lab color space:
+L - encodes Lightness of each pixel
+a - encode how much green-red each pixel is
+b - encode how much yellow-blue each pixel is
+
+
+## WorkFlow:
+
+### Generator:
+Using Lab color space info, 
+1. L channel(which is the grayscale image) is given to the generator model(U-net architecture)  
+2. It predict the other two channels (*a, *b) and after its prediction, we concatenate all the channels and we get our colorful image.
+<img width="115" alt="image" src="https://user-images.githubusercontent.com/76114538/176705408-a4d4fff3-c5f9-4d02-a493-6fdc0d776536.png">
+
+### Discriminator:
+1. The discriminator(convolutional “PatchGAN” classifier), takes these two produced channels and concatenates them with the input grayscale image and decides whether this new 3-channel image is fake or real.
+2. Also discriminator(convolutional “PatchGAN” classifier) also takes real images (3-channel images again in Lab color space) that are not produced by the generator and decides whether this new 3-channel image is fake or real.
+![image](https://user-images.githubusercontent.com/76114538/176707413-6dc48da8-11d2-44c2-8b84-9dc607db3191.png)
+
