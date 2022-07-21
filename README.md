@@ -75,7 +75,8 @@ Input Image (Black & White), Output Image (Colored), Real Image respectively: </
 
 ![WhatsApp Image 2022-06-30 at 11 03 47 PM](https://user-images.githubusercontent.com/76114538/176744267-f84dacfc-0c74-4837-bcac-4a18c0317671.jpeg)
 
-
+## Reference
+Research Paper Link - https://arxiv.org/pdf/1908.09873
 
 
 
