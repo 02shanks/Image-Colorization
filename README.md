@@ -1,4 +1,4 @@
-# Image-Colorization
+# Conditional GAN for Image Colourisation
 
 
 ## RGB and Lab
